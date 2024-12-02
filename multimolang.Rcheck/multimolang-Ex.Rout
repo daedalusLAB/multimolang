@@ -375,7 +375,7 @@ The frame 59 has been read.
 > cleanEx()
 > options(digits = 7L)
 > base::cat("Time elapsed: ", proc.time() - base::get("ptime", pos = 'CheckExEnv'),"\n")
-Time elapsed:  1.894 0.114 1.987 0 0 
+Time elapsed:  1.789 0.122 1.878 0 0 
 > grDevices::dev.off()
 null device 
           1 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.12.2)  2 DEC 2024 20:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.12.2)  2 DEC 2024 22:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -362,7 +362,7 @@ File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count290
 \l__pdf_internal_box=\box58
 )
-(/tmp/RtmpJGHo8y/Rd2pdf65244f6846cb/Rd2.aux)
+(/tmp/Rtmps6fopD/Rd2pdfb32618ce264f/Rd2.aux)
 \openout1 = `Rd2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
@@ -399,8 +399,8 @@ LaTeX Font Info:    ... okay on input line 8.
 \everyMPtoPDFconversion=\toks29
 )
 Package hyperref Info: Link coloring ON on input line 8.
- (/tmp/RtmpJGHo8y/Rd2pdf65244f6846cb/Rd2.out)
-(/tmp/RtmpJGHo8y/Rd2pdf65244f6846cb/Rd2.out)
+ (/tmp/Rtmps6fopD/Rd2pdfb32618ce264f/Rd2.out)
+(/tmp/Rtmps6fopD/Rd2pdfb32618ce264f/Rd2.out)
 \@outlinefile=\write4
 \openout4 = `Rd2.out'.
 
@@ -436,7 +436,7 @@ LaTeX Font Info:    Trying to load font information for T1+phv on input line 39
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
-(/tmp/RtmpJGHo8y/Rd2pdf65244f6846cb/Rd2.toc)
+(/tmp/Rtmps6fopD/Rd2pdfb32618ce264f/Rd2.toc)
 \tf@toc=\write5
 \openout5 = `Rd2.toc'.
 
@@ -514,11 +514,11 @@ im-ple-men-ta-tion de-tails: [][]$\T1/zi4/m/n/10 https : / / github .
 
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
 (Font)              scaled to size 9.0pt on input line 254.
-[6] (/tmp/RtmpJGHo8y/Rd2pdf65244f6846cb/Rd2.ind [7] [8
+[6] (/tmp/Rtmps6fopD/Rd2pdfb32618ce264f/Rd2.ind [7] [8
 
 
 ])
-(/tmp/RtmpJGHo8y/Rd2pdf65244f6846cb/Rd2.aux)
+(/tmp/Rtmps6fopD/Rd2pdfb32618ce264f/Rd2.aux)
 Package rerunfilecheck Info: File `Rd2.out' has not changed.
 (rerunfilecheck)             Checksum: 54BD7AEBD5E62173CD2D76B0490F8B58;148.
  ) 

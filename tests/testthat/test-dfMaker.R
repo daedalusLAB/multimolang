@@ -75,7 +75,7 @@ test_that("Origin and scaling points are correctly transformed with fast_scaling
 # Test with a custom configuration file where all values are set to true
 test_that("dfMaker processes a folder using a custom configuration file with all true values", {
   # Use the package path for the input data
-  input_folder <- system.file("extdata", "ex_videos", "o1", package = "multimolang")
+  input_folder <- system.file("extdata", "ex_videos", "o2", package = "multimolang")
   expect_true(dir.exists(input_folder), "The input folder does not exist")
 
   # Path to the configuration file (config_all_true.json)
@@ -94,13 +94,25 @@ test_that("dfMaker processes a folder using a custom configuration file with all
   # Debugging: Display information about the configuration used
   message("Configuration file used: ", config_file)
 
-  # Check that all configurations were applied (example: timezone)
-  timezone_column <- "timezone"
-  if (timezone_column %in% colnames(result)) {
-    expect_equal(unique(result[[timezone_column]]), "America/Los_Angeles", "The timezone does not match the configuration file")
+  # List of columns to check
+  required_columns <- c("exp_search", "datetime", "country_code",
+                        "network_code", "program_name", "time_range")
+
+  # Iterate over each column to ensure it exists
+  for (col in required_columns) {
+    if (col %in% colnames(result)) {
+      expect_true(!any(is.na(result[[col]])), paste0("The column ", col, " contains NA values"))
+    } else {
+      warning(paste0("The column ", col, " was not found in the result"))
+    }
+  }
+
+  # Print column names and the first row if any required column is missing
+  if (col %in% colnames(result)) {
+    expect_true(!any(is.na(result[[col]])), paste0("The column ", col, " contains NA values"))
   } else {
-    warning("The timezone column was not found in the result")
+    warning(paste0("The column ", col, " was not found in the result"))
     print(colnames(result))
-    print(result[1,])
+    print(result[1, ])
   }
 })

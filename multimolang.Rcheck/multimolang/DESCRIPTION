@@ -21,4 +21,4 @@ NeedsCompilation: no
 Packaged: 2024-12-02 19:47:46 UTC; bherreno
 Author: Brian Herreño Jiménez [aut, cre]
 Maintainer: Brian Herreño Jiménez <brian.herreno@um.es>
-Built: R 4.2.2; ; 2024-12-02 19:48:02 UTC; unix
+Built: R 4.2.2; ; 2024-12-02 21:01:37 UTC; unix
