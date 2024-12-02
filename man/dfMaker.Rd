@@ -30,36 +30,36 @@ dfMaker(
 
 \item{transformation_coords}{Numeric vector of length 4 that specifies the transformation coordinates. Each element of the vector has a specific role:
 \enumerate{
-  \item \strong{\code{t_typepoint}}: Type of keypoints to use. Possible values:
-    \enumerate{
-      \item \code{1}: Body keypoints (pose).
-      \item \code{2}: Face keypoints.
-      \item \code{3}: Left hand keypoints.
-      \item \code{4}: Right hand keypoints.
-    }
-  \item \strong{\code{o_point}}: Index of the keypoint used as the \strong{origin} in the new coordinate system.
-  \item \strong{\code{i_point}}: Index of the keypoint that defines the primary base vector \code{v.i}.
-  \item \strong{\code{j_point}}: Index of the keypoint that defines the secondary base vector \code{v.j}.
-    \itemize{
-      \item If \code{i_point == j_point}, \code{v.j} is calculated as a \strong{perpendicular} vector to \code{v.i} (orthonormalization).
-      \item If \code{fast_scaling = TRUE}, \code{v.j} is not utilized and should be set to \code{NA}.
-    }
+\item \strong{\code{t_typepoint}}: Type of keypoints to use. Possible values:
+\enumerate{
+\item \code{1}: Body keypoints (pose).
+\item \code{2}: Face keypoints.
+\item \code{3}: Left hand keypoints.
+\item \code{4}: Right hand keypoints.
+}
+\item \strong{\code{o_point}}: Index of the keypoint used as the \strong{origin} in the new coordinate system.
+\item \strong{\code{i_point}}: Index of the keypoint that defines the primary base vector \code{v.i}.
+\item \strong{\code{j_point}}: Index of the keypoint that defines the secondary base vector \code{v.j}.
+\itemize{
+\item If \code{i_point == j_point}, \code{v.j} is calculated as a \strong{perpendicular} vector to \code{v.i} (orthonormalization).
+\item If \code{fast_scaling = TRUE}, \code{v.j} is not utilized and should be set to \code{NA}.
+}
 }}
 }
 \value{
 A data frame containing the processed keypoints data with the following structure:
 
 \describe{
-  \item{\strong{id}}{Character. Identifier derived from the name of the file processed.}
-  \item{\strong{frame}}{Numeric. Frame number from which the data is extracted.}
-  \item{\strong{people_id}}{Integer. Identifier for each detected person in the frame.}
-  \item{\strong{type_points}}{Character. Type of keypoints (e.g., \code{"pose_keypoints"}, \code{"face_keypoints"}, \code{"hand_left_keypoints"}, \code{"hand_right_keypoints"}).}
-  \item{\strong{points}}{Integer. Index of the keypoints sequence.}
-  \item{\strong{x}}{Numeric. X-coordinate of the keypoint.}
-  \item{\strong{y}}{Numeric. Y-coordinate of the keypoint.}
-  \item{\strong{c}}{Numeric. Confidence score for the detected keypoint, ranging from 0 to 1.}
-  \item{\strong{nx}}{Numeric. Transformed X-coordinate in the new coordinate system.}
-  \item{\strong{ny}}{Numeric. Transformed Y-coordinate in the new coordinate system.}
+\item{\strong{id}}{Character. Identifier derived from the name of the file processed.}
+\item{\strong{frame}}{Numeric. Frame number from which the data is extracted.}
+\item{\strong{people_id}}{Integer. Identifier for each detected person in the frame.}
+\item{\strong{type_points}}{Character. Type of keypoints (e.g., \code{"pose_keypoints"}, \code{"face_keypoints"}, \code{"hand_left_keypoints"}, \code{"hand_right_keypoints"}).}
+\item{\strong{points}}{Integer. Index of the keypoints sequence.}
+\item{\strong{x}}{Numeric. X-coordinate of the keypoint.}
+\item{\strong{y}}{Numeric. Y-coordinate of the keypoint.}
+\item{\strong{c}}{Numeric. Confidence score for the detected keypoint, ranging from 0 to 1.}
+\item{\strong{nx}}{Numeric. Transformed X-coordinate in the new coordinate system.}
+\item{\strong{ny}}{Numeric. Transformed Y-coordinate in the new coordinate system.}
 }
 
 Example of the returned data frame:
@@ -133,17 +133,17 @@ This configuration allows you to control which metadata fields are extracted fro
 
 \strong{Breakdown of Filename Components:}
 \describe{
-  \item{\strong{\code{2006-01-14}}}{Extracted by \code{extract_datetime}: The date of the broadcast (YYYY-MM-DD).}
-  \item{\strong{\code{0600}}}{Extracted by \code{extract_time}: The time of the broadcast in 24-hour format (HHMM).}
-  \item{\strong{\code{US}}}{Extracted by \code{extract_country_code}: The country code where the broadcast originated.}
-  \item{\strong{\code{KTTV-FOX_Ten_OClock_News_273-275_back_then}}}{Extracted by \code{extract_network_code}, \code{extract_program_name}, and \code{extract_exp_search}:
-    \describe{
-      \item{\strong{\code{KTTV-FOX}}}{The network code and station identifier.}
-      \item{\strong{\code{Ten_OClock_News}}}{The program name.}
-      \item{\strong{\code{273-275}}}{The time range or segment identifier within the program.}
-      \item{\strong{\code{back_then}}}{Extracted by \code{extract_exp_search}: A specific expression or keyword used in linguistic studies.}
-    }
-  }
+\item{\strong{\code{2006-01-14}}}{Extracted by \code{extract_datetime}: The date of the broadcast (YYYY-MM-DD).}
+\item{\strong{\code{0600}}}{Extracted by \code{extract_time}: The time of the broadcast in 24-hour format (HHMM).}
+\item{\strong{\code{US}}}{Extracted by \code{extract_country_code}: The country code where the broadcast originated.}
+\item{\strong{\code{KTTV-FOX_Ten_OClock_News_273-275_back_then}}}{Extracted by \code{extract_network_code}, \code{extract_program_name}, and \code{extract_exp_search}:
+\describe{
+\item{\strong{\code{KTTV-FOX}}}{The network code and station identifier.}
+\item{\strong{\code{Ten_OClock_News}}}{The program name.}
+\item{\strong{\code{273-275}}}{The time range or segment identifier within the program.}
+\item{\strong{\code{back_then}}}{Extracted by \code{extract_exp_search}: A specific expression or keyword used in linguistic studies.}
+}
+}
 }
 
 \strong{Note on Timezone:}
@@ -156,18 +156,52 @@ datetime <- as.POSIXct(datetime_str, format = "%Y-%m-%d %H%M", tz = timezone)
 }
 
 \examples{
-\dontrun{
-# Processing NewsScape data with a custom configuration file
+# Example 1: Define paths to example data included with the package
+input.folder <- system.file("extdata/ex_videos/o1",
+                            package = "multimolang")
+output.file <- file.path(tempdir(), "processed_data.csv")
+output.path <- tempdir()  # Use a temporary directory for writing output
+
+# Run dfMaker with example data
 df <- dfMaker(
-  input.folder = "path/to/OpenPose_outputs/json",
-  config.path = "path/to/config.json",
-  output.file = "news_scape_data.csv",
-  output.path = "output/directory",
+  input.folder = input.folder,
+  output.file = output.file,
+  output.path = output.path,
   no_save = FALSE,
   fast_scaling = TRUE,
   transformation_coords = c(1, 1, 5, 5)
 )
-}
+
+# View the first few rows of the resulting data frame
+head(df)
+
+# Example 2: Using NewsScape data with a custom configuration file
+
+# Define paths to example data
+input.folder <- system.file("extdata/ex_videos/o1",
+                            package = "multimolang")
+
+# Define the configuration file path
+config.path <- system.file("extdata/config_all_true.json",
+                           package = "multimolang")
+
+# Define output paths
+output.file <- file.path(tempdir(), "processed_data.csv")
+output.path <- tempdir()
+
+# Run dfMaker with custom configuration
+df <- dfMaker(
+  input.folder = input.folder,
+  config.path = config.path,
+  output.file = output.file,
+  output.path = output.path,
+  no_save = FALSE,
+  fast_scaling = TRUE,
+  transformation_coords = c(1, 1, 5, 5)
+)
+
+# View the first few rows
+head(df)
 
 }
 \references{

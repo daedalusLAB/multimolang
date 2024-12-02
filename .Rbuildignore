@@ -1,4 +1,9 @@
-^.*\.Rproj$
-^\.Rproj\.user$
+^\\.git$
+^\\.gitignore$
+^\\.Rproj.user$
+^vignettes/.*\\.log$
+^README\\.md$
+^\\.DS_Store$
+^multimolang\\.Rproj$
 ^doc$
 ^Meta$

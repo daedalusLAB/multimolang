@@ -2,116 +2,434 @@ Hmm ... looks like a package
 Converting parsed Rd's to LaTeX 
 Creating pdf output from LaTeX ...
 
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex)
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex)
  restricted \write18 enabled.
 entering extended mode
-LaTeX2e <2024-11-01>
-L3 programming layer <2024-11-02>
-(./Rd2.tex
-(/export/home/brian/.TinyTeX/texmf-dist/tex/latex/base/book.cls
-Document Class: book 2024/06/29 v1.4n Standard LaTeX document class
-(/export/home/brian/.TinyTeX/texmf-dist/tex/latex/base/bk10.clo)) (/usr/share/R/share/texmf/tex/latex/Rd.sty (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/base/ifthen.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/tools/longtable.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/tools/bm.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/base/alltt.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/tools/verbatim.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/url/url.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/base/textcomp.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-01-16> (./Rd2.tex
+(/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2022/07/02 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk10.clo))
+(/usr/share/R/share/texmf/tex/latex/Rd.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/alltt.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 For additional information on amsmath, use the `?' option.
-(/export/home/brian/.TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty)) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty)) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/amsfonts/eucal.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/base/fontenc.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/psnfss/times.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/inconsolata/zi4.sty `inconsolata-zi4' v1.12, 2019/05/17 Text macros for Inconsolata (msharpe) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/xkeyval/xkeyval.sty (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/xkeyval/xkvutils.tex (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/xkeyval/keyval.tex))))) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/graphics/color.sty (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx)) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty))) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty))) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def) (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def) (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty)) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/base/atbegshi-ltx.sty)) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/base/atveryend-ltx.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/base/makeidx.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/inconsolata/zi4.sty
+`inconsolata-zi4' v1.12, 2019/05/17 Text macros for Inconsolata (msharpe)
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/keyval.tex)))))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))
+
+Package hyperref Warning: Option `hyperindex' has already been used,
+(hyperref)                setting the option has no effect on input line 394.
+
+
+Package hyperref Warning: Option `pagebackref' has already been used,
+(hyperref)                setting the option has no effect on input line 394.
+
+) (/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
 Writing index file Rd2.idx
-(/export/home/brian/.TinyTeX/texmf-dist/tex/latex/psnfss/t1ptm.fd) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
 No file Rd2.aux.
-(/export/home/brian/.TinyTeX/texmf-dist/tex/latex/inconsolata/t1zi4.fd) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd)
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/inconsolata/t1zi4.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd)
 No file Rd2.toc.
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (23.83842pt too wide) in paragraph at lines 72--74
+[]\T1/ptm/m/n/10 Logical. If []\T1/zi4/m/n/10 TRUE[]\T1/ptm/m/n/10 , uses fast 
+scal-ing for trans-for-ma-tion. \T1/ptm/b/n/10 Warn-ing: \T1/ptm/m/n/10 When []
+\T1/zi4/m/n/10 fast_scaling
+[2] (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd)
+Overfull \hbox (11.73788pt too wide) in paragraph at lines 107--108
+[]\T1/ptm/m/n/10 When pro-cess-ing data with mul-ti-ple unique []\T1/zi4/m/n/10
+ id []\T1/ptm/m/n/10 val-ues, en-sure that you pro-vide an ex-plicit []\T1/zi4/
+m/n/10 output.file
 
-[1{/export/home/brian/.TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/export/home/brian/.TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc}{/export/home/brian/.TinyTeX/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc}]
+Overfull \hbox (74.19958pt too wide) in paragraph at lines 124--125
+[]\T1/ptm/m/n/10 Character. Type of key-points (e.g., []\T1/zi4/m/n/10 "pose_ke
+ypoints"[]\T1/ptm/m/n/10 , []\T1/zi4/m/n/10 "face_keypoints"[]\T1/ptm/m/n/10 , 
+[]\T1/zi4/m/n/10 "hand_left_keypoints"[]\T1/ptm/m/n/10 ,
+(/usr/share/texlive/texmf-dist/tex/latex/inconsolata/ts1zi4.fd)
+Overfull \hbox (19.72977pt too wide) in paragraph at lines 139--139
+ [] \T1/zi4/m/n/10 $ id         : chr  "2006-01-14_0600_US_KTTV-FOX_Ten_OClock_
+News_273-275_back_then" ...[] 
+[3]
+Overfull \hbox (49.75021pt too wide) in paragraph at lines 142--142
+ [] \T1/zi4/m/n/10 $ type_points: chr  "pose_keypoints" "pose_keypoints" "pose_
+keypoints" "pose_keypoints" ...[] 
+[4]
+Overfull \hbox (49.78088pt too wide) in paragraph at lines 190--190
+ []\T1/zi4/m/n/10 2006-01-14_0600_US_KTTV-FOX_Ten_OClock_News_273-275_back_then
+_000000000000_keypoints.json[] 
+
+Overfull \hbox (78.9205pt too wide) in paragraph at lines 200--201
+[]\T1/ptm/m/n/10 Extracted by []\T1/zi4/m/n/10 extract_network_code[]\T1/ptm/m/
+n/10 , []\T1/zi4/m/n/10 extract_program_name[]\T1/ptm/m/n/10 ,
+
+Overfull \hbox (8.60739pt too wide) in paragraph at lines 235--237
+[]\T1/ptm/m/n/10 Alternatively, ex-plore the Open-Pose GitHub repos-i-tory for 
+im-ple-men-ta-tion de-tails: [][]$\T1/zi4/m/n/10 https : / / github .
+[5]
 No file Rd2.ind.
-
-[2] (/tmp/RtmpNaqneZ/Rd2pdf144dfa794a1dff/Rd2.aux)
-
-Package rerunfilecheck Warning: File `Rd2.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
- )</export/home/brian/.TinyTeX/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb></export/home/brian/.TinyTeX/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></export/home/brian/.TinyTeX/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></export/home/brian/.TinyTeX/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></export/home/brian/.TinyTeX/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Rd2.pdf (2 pages, 65829 bytes).
-Transcript written on Rd2.log.
-This is makeindex, version 2.15 [TeX Live 2022/dev] (kpathsea + Thai support).
-Scanning input file Rd2.idx....done (1 entries accepted, 0 rejected).
-Sorting entries...done (0 comparisons).
-Generating output file Rd2.ind....done (5 lines written, 0 warnings).
-Output written in Rd2.ind.
-Transcript written in Rd2.ilg.
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex)
- restricted \write18 enabled.
-entering extended mode
-LaTeX2e <2024-11-01>
-L3 programming layer <2024-11-02>
-(./Rd2.tex
-(/export/home/brian/.TinyTeX/texmf-dist/tex/latex/base/book.cls
-Document Class: book 2024/06/29 v1.4n Standard LaTeX document class
-(/export/home/brian/.TinyTeX/texmf-dist/tex/latex/base/bk10.clo)) (/usr/share/R/share/texmf/tex/latex/Rd.sty (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/base/ifthen.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/tools/longtable.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/tools/bm.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/base/alltt.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/tools/verbatim.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/url/url.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/base/textcomp.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
-For additional information on amsmath, use the `?' option.
-(/export/home/brian/.TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty)) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty)) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/amsfonts/eucal.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/base/fontenc.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/psnfss/times.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/inconsolata/zi4.sty `inconsolata-zi4' v1.12, 2019/05/17 Text macros for Inconsolata (msharpe) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/xkeyval/xkeyval.sty (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/xkeyval/xkvutils.tex (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/xkeyval/keyval.tex))))) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/graphics/color.sty (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx)) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty))) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty))) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def) (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def) (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty)) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/base/atbegshi-ltx.sty)) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/base/atveryend-ltx.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/base/makeidx.sty)
-Writing index file Rd2.idx
-(/export/home/brian/.TinyTeX/texmf-dist/tex/latex/psnfss/t1ptm.fd) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def) (/tmp/RtmpNaqneZ/Rd2pdf144dfa794a1dff/Rd2.aux) (/tmp/RtmpNaqneZ/Rd2pdf144dfa794a1dff/Rd2.out) (/tmp/RtmpNaqneZ/Rd2pdf144dfa794a1dff/Rd2.out) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/inconsolata/t1zi4.fd) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd) (/tmp/RtmpNaqneZ/Rd2pdf144dfa794a1dff/Rd2.toc)
-[1{/export/home/brian/.TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/export/home/brian/.TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc}{/export/home/brian/.TinyTeX/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc}] (/tmp/RtmpNaqneZ/Rd2pdf144dfa794a1dff/Rd2.ind
-[2]
-
-[3]) (/tmp/RtmpNaqneZ/Rd2pdf144dfa794a1dff/Rd2.aux)
+[6] (/tmp/RtmpgPUAup/Rd2pdf102454da1a429/Rd2.aux)
 
 Package rerunfilecheck Warning: File `Rd2.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
 (rerunfilecheck)                or use package `bookmark'.
 
- )</export/home/brian/.TinyTeX/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb></export/home/brian/.TinyTeX/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></export/home/brian/.TinyTeX/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></export/home/brian/.TinyTeX/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></export/home/brian/.TinyTeX/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Rd2.pdf (3 pages, 66417 bytes).
+ )
+(see the transcript file for additional information){/usr/share/texlive/texmf-d
+ist/fonts/enc/dvips/inconsolata/i4-ts1.enc}{/usr/share/texlive/texmf-dist/fonts
+/enc/dvips/base/8r.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/inconsola
+ta/i4-t1-0.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/inconsolata/In
+consolata-zi4r.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr
+8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/urw/times/utmri8a.pfb>
+Output written on Rd2.pdf (6 pages, 89593 bytes).
 Transcript written on Rd2.log.
-This is makeindex, version 2.15 [TeX Live 2022/dev] (kpathsea + Thai support).
+This is makeindex, version 2.16 [TeX Live 2022] (kpathsea + Thai support).
 Scanning input file Rd2.idx....done (1 entries accepted, 0 rejected).
 Sorting entries...done (0 comparisons).
 Generating output file Rd2.ind....done (5 lines written, 0 warnings).
 Output written in Rd2.ind.
 Transcript written in Rd2.ilg.
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex)
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex)
  restricted \write18 enabled.
 entering extended mode
-LaTeX2e <2024-11-01>
-L3 programming layer <2024-11-02>
-(./Rd2.tex
-(/export/home/brian/.TinyTeX/texmf-dist/tex/latex/base/book.cls
-Document Class: book 2024/06/29 v1.4n Standard LaTeX document class
-(/export/home/brian/.TinyTeX/texmf-dist/tex/latex/base/bk10.clo)) (/usr/share/R/share/texmf/tex/latex/Rd.sty (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/base/ifthen.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/tools/longtable.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/tools/bm.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/base/alltt.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/tools/verbatim.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/url/url.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/base/textcomp.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-01-16> (./Rd2.tex
+(/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2022/07/02 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk10.clo))
+(/usr/share/R/share/texmf/tex/latex/Rd.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/alltt.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 For additional information on amsmath, use the `?' option.
-(/export/home/brian/.TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty)) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty)) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/amsfonts/eucal.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/base/fontenc.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/psnfss/times.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/inconsolata/zi4.sty `inconsolata-zi4' v1.12, 2019/05/17 Text macros for Inconsolata (msharpe) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/xkeyval/xkeyval.sty (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/xkeyval/xkvutils.tex (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/xkeyval/keyval.tex))))) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/graphics/color.sty (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx)) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty))) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty))) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def) (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def) (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty)) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/base/atbegshi-ltx.sty)) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/base/atveryend-ltx.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/base/makeidx.sty)
-Writing index file Rd2.idx
-(/export/home/brian/.TinyTeX/texmf-dist/tex/latex/psnfss/t1ptm.fd) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def) (/tmp/RtmpNaqneZ/Rd2pdf144dfa794a1dff/Rd2.aux) (/tmp/RtmpNaqneZ/Rd2pdf144dfa794a1dff/Rd2.out) (/tmp/RtmpNaqneZ/Rd2pdf144dfa794a1dff/Rd2.out) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/inconsolata/t1zi4.fd) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd) (/tmp/RtmpNaqneZ/Rd2pdf144dfa794a1dff/Rd2.toc)
-[1{/export/home/brian/.TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/export/home/brian/.TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc}{/export/home/brian/.TinyTeX/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc}] (/tmp/RtmpNaqneZ/Rd2pdf144dfa794a1dff/Rd2.ind
-[2]
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/inconsolata/zi4.sty
+`inconsolata-zi4' v1.12, 2019/05/17 Text macros for Inconsolata (msharpe)
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/keyval.tex)))))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))
 
-[3]) (/tmp/RtmpNaqneZ/Rd2pdf144dfa794a1dff/Rd2.aux) )</export/home/brian/.TinyTeX/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb></export/home/brian/.TinyTeX/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></export/home/brian/.TinyTeX/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></export/home/brian/.TinyTeX/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></export/home/brian/.TinyTeX/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Rd2.pdf (3 pages, 66831 bytes).
+Package hyperref Warning: Option `hyperindex' has already been used,
+(hyperref)                setting the option has no effect on input line 394.
+
+
+Package hyperref Warning: Option `pagebackref' has already been used,
+(hyperref)                setting the option has no effect on input line 394.
+
+) (/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
+Writing index file Rd2.idx
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
+(/tmp/RtmpgPUAup/Rd2pdf102454da1a429/Rd2.aux)
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/tmp/RtmpgPUAup/Rd2pdf102454da1a429/Rd2.out)
+(/tmp/RtmpgPUAup/Rd2pdf102454da1a429/Rd2.out)
+(/usr/share/texlive/texmf-dist/tex/latex/inconsolata/t1zi4.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd)
+(/tmp/RtmpgPUAup/Rd2pdf102454da1a429/Rd2.toc) [1{/var/lib/texmf/fonts/map/pdfte
+x/updmap/pdftex.map}]
+Overfull \hbox (23.83842pt too wide) in paragraph at lines 72--74
+[]\T1/ptm/m/n/10 Logical. If []\T1/zi4/m/n/10 TRUE[]\T1/ptm/m/n/10 , uses fast 
+scal-ing for trans-for-ma-tion. \T1/ptm/b/n/10 Warn-ing: \T1/ptm/m/n/10 When []
+\T1/zi4/m/n/10 fast_scaling
+[2] (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd)
+Overfull \hbox (11.73788pt too wide) in paragraph at lines 107--108
+[]\T1/ptm/m/n/10 When pro-cess-ing data with mul-ti-ple unique []\T1/zi4/m/n/10
+ id []\T1/ptm/m/n/10 val-ues, en-sure that you pro-vide an ex-plicit []\T1/zi4/
+m/n/10 output.file
+
+Overfull \hbox (74.19958pt too wide) in paragraph at lines 124--125
+[]\T1/ptm/m/n/10 Character. Type of key-points (e.g., []\T1/zi4/m/n/10 "pose_ke
+ypoints"[]\T1/ptm/m/n/10 , []\T1/zi4/m/n/10 "face_keypoints"[]\T1/ptm/m/n/10 , 
+[]\T1/zi4/m/n/10 "hand_left_keypoints"[]\T1/ptm/m/n/10 ,
+(/usr/share/texlive/texmf-dist/tex/latex/inconsolata/ts1zi4.fd)
+Overfull \hbox (19.72977pt too wide) in paragraph at lines 139--139
+ [] \T1/zi4/m/n/10 $ id         : chr  "2006-01-14_0600_US_KTTV-FOX_Ten_OClock_
+News_273-275_back_then" ...[] 
+[3]
+Overfull \hbox (49.75021pt too wide) in paragraph at lines 142--142
+ [] \T1/zi4/m/n/10 $ type_points: chr  "pose_keypoints" "pose_keypoints" "pose_
+keypoints" "pose_keypoints" ...[] 
+[4]
+Overfull \hbox (49.78088pt too wide) in paragraph at lines 190--190
+ []\T1/zi4/m/n/10 2006-01-14_0600_US_KTTV-FOX_Ten_OClock_News_273-275_back_then
+_000000000000_keypoints.json[] 
+
+Overfull \hbox (78.9205pt too wide) in paragraph at lines 200--201
+[]\T1/ptm/m/n/10 Extracted by []\T1/zi4/m/n/10 extract_network_code[]\T1/ptm/m/
+n/10 , []\T1/zi4/m/n/10 extract_program_name[]\T1/ptm/m/n/10 ,
+
+Overfull \hbox (8.60739pt too wide) in paragraph at lines 235--237
+[]\T1/ptm/m/n/10 Alternatively, ex-plore the Open-Pose GitHub repos-i-tory for 
+im-ple-men-ta-tion de-tails: [][]$\T1/zi4/m/n/10 https : / / github .
+[5] (/tmp/RtmpgPUAup/Rd2pdf102454da1a429/Rd2.ind [6] [7])
+(/tmp/RtmpgPUAup/Rd2pdf102454da1a429/Rd2.aux)
+
+Package rerunfilecheck Warning: File `Rd2.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+ )
+(see the transcript file for additional information){/usr/share/texlive/texmf-d
+ist/fonts/enc/dvips/inconsolata/i4-ts1.enc}{/usr/share/texlive/texmf-dist/fonts
+/enc/dvips/base/8r.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/inconsola
+ta/i4-t1-0.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/inconsolata/In
+consolata-zi4r.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr
+8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/urw/times/utmri8a.pfb>
+Output written on Rd2.pdf (7 pages, 90199 bytes).
 Transcript written on Rd2.log.
-This is makeindex, version 2.15 [TeX Live 2022/dev] (kpathsea + Thai support).
+This is makeindex, version 2.16 [TeX Live 2022] (kpathsea + Thai support).
 Scanning input file Rd2.idx....done (1 entries accepted, 0 rejected).
 Sorting entries...done (0 comparisons).
 Generating output file Rd2.ind....done (5 lines written, 0 warnings).
 Output written in Rd2.ind.
 Transcript written in Rd2.ilg.
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex)
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex)
  restricted \write18 enabled.
 entering extended mode
-LaTeX2e <2024-11-01>
-L3 programming layer <2024-11-02>
-(./Rd2.tex
-(/export/home/brian/.TinyTeX/texmf-dist/tex/latex/base/book.cls
-Document Class: book 2024/06/29 v1.4n Standard LaTeX document class
-(/export/home/brian/.TinyTeX/texmf-dist/tex/latex/base/bk10.clo)) (/usr/share/R/share/texmf/tex/latex/Rd.sty (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/base/ifthen.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/tools/longtable.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/tools/bm.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/base/alltt.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/tools/verbatim.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/url/url.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/base/textcomp.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-01-16> (./Rd2.tex
+(/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2022/07/02 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk10.clo))
+(/usr/share/R/share/texmf/tex/latex/Rd.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/alltt.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 For additional information on amsmath, use the `?' option.
-(/export/home/brian/.TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty)) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty)) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/amsfonts/eucal.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/base/fontenc.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/psnfss/times.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/inconsolata/zi4.sty `inconsolata-zi4' v1.12, 2019/05/17 Text macros for Inconsolata (msharpe) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/xkeyval/xkeyval.sty (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/xkeyval/xkvutils.tex (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/xkeyval/keyval.tex))))) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/graphics/color.sty (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx)) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty))) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty))) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def) (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def) (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty)) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/base/atbegshi-ltx.sty)) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/base/atveryend-ltx.sty) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty (/export/home/brian/.TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/base/makeidx.sty)
-Writing index file Rd2.idx
-(/export/home/brian/.TinyTeX/texmf-dist/tex/latex/psnfss/t1ptm.fd) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def) (/tmp/RtmpNaqneZ/Rd2pdf144dfa794a1dff/Rd2.aux) (/tmp/RtmpNaqneZ/Rd2pdf144dfa794a1dff/Rd2.out) (/tmp/RtmpNaqneZ/Rd2pdf144dfa794a1dff/Rd2.out) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/inconsolata/t1zi4.fd) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd) (/export/home/brian/.TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd) (/tmp/RtmpNaqneZ/Rd2pdf144dfa794a1dff/Rd2.toc)
-[1{/export/home/brian/.TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/export/home/brian/.TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc}{/export/home/brian/.TinyTeX/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc}] (/tmp/RtmpNaqneZ/Rd2pdf144dfa794a1dff/Rd2.ind
-[2]
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/inconsolata/zi4.sty
+`inconsolata-zi4' v1.12, 2019/05/17 Text macros for Inconsolata (msharpe)
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/keyval.tex)))))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))
 
-[3]) (/tmp/RtmpNaqneZ/Rd2pdf144dfa794a1dff/Rd2.aux) )</export/home/brian/.TinyTeX/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb></export/home/brian/.TinyTeX/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></export/home/brian/.TinyTeX/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></export/home/brian/.TinyTeX/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></export/home/brian/.TinyTeX/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Rd2.pdf (3 pages, 66831 bytes).
+Package hyperref Warning: Option `hyperindex' has already been used,
+(hyperref)                setting the option has no effect on input line 394.
+
+
+Package hyperref Warning: Option `pagebackref' has already been used,
+(hyperref)                setting the option has no effect on input line 394.
+
+) (/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
+Writing index file Rd2.idx
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
+(/tmp/RtmpgPUAup/Rd2pdf102454da1a429/Rd2.aux)
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/tmp/RtmpgPUAup/Rd2pdf102454da1a429/Rd2.out)
+(/tmp/RtmpgPUAup/Rd2pdf102454da1a429/Rd2.out)
+(/usr/share/texlive/texmf-dist/tex/latex/inconsolata/t1zi4.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd)
+(/tmp/RtmpgPUAup/Rd2pdf102454da1a429/Rd2.toc) [1{/var/lib/texmf/fonts/map/pdfte
+x/updmap/pdftex.map}]
+Overfull \hbox (23.83842pt too wide) in paragraph at lines 72--74
+[]\T1/ptm/m/n/10 Logical. If []\T1/zi4/m/n/10 TRUE[]\T1/ptm/m/n/10 , uses fast 
+scal-ing for trans-for-ma-tion. \T1/ptm/b/n/10 Warn-ing: \T1/ptm/m/n/10 When []
+\T1/zi4/m/n/10 fast_scaling
+[2] (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd)
+Overfull \hbox (11.73788pt too wide) in paragraph at lines 107--108
+[]\T1/ptm/m/n/10 When pro-cess-ing data with mul-ti-ple unique []\T1/zi4/m/n/10
+ id []\T1/ptm/m/n/10 val-ues, en-sure that you pro-vide an ex-plicit []\T1/zi4/
+m/n/10 output.file
+
+Overfull \hbox (74.19958pt too wide) in paragraph at lines 124--125
+[]\T1/ptm/m/n/10 Character. Type of key-points (e.g., []\T1/zi4/m/n/10 "pose_ke
+ypoints"[]\T1/ptm/m/n/10 , []\T1/zi4/m/n/10 "face_keypoints"[]\T1/ptm/m/n/10 , 
+[]\T1/zi4/m/n/10 "hand_left_keypoints"[]\T1/ptm/m/n/10 ,
+(/usr/share/texlive/texmf-dist/tex/latex/inconsolata/ts1zi4.fd)
+Overfull \hbox (19.72977pt too wide) in paragraph at lines 139--139
+ [] \T1/zi4/m/n/10 $ id         : chr  "2006-01-14_0600_US_KTTV-FOX_Ten_OClock_
+News_273-275_back_then" ...[] 
+[3]
+Overfull \hbox (49.75021pt too wide) in paragraph at lines 142--142
+ [] \T1/zi4/m/n/10 $ type_points: chr  "pose_keypoints" "pose_keypoints" "pose_
+keypoints" "pose_keypoints" ...[] 
+[4]
+Overfull \hbox (49.78088pt too wide) in paragraph at lines 190--190
+ []\T1/zi4/m/n/10 2006-01-14_0600_US_KTTV-FOX_Ten_OClock_News_273-275_back_then
+_000000000000_keypoints.json[] 
+
+Overfull \hbox (78.9205pt too wide) in paragraph at lines 200--201
+[]\T1/ptm/m/n/10 Extracted by []\T1/zi4/m/n/10 extract_network_code[]\T1/ptm/m/
+n/10 , []\T1/zi4/m/n/10 extract_program_name[]\T1/ptm/m/n/10 ,
+
+Overfull \hbox (8.60739pt too wide) in paragraph at lines 235--237
+[]\T1/ptm/m/n/10 Alternatively, ex-plore the Open-Pose GitHub repos-i-tory for 
+im-ple-men-ta-tion de-tails: [][]$\T1/zi4/m/n/10 https : / / github .
+[5] (/tmp/RtmpgPUAup/Rd2pdf102454da1a429/Rd2.ind [6] [7])
+(/tmp/RtmpgPUAup/Rd2pdf102454da1a429/Rd2.aux) )
+(see the transcript file for additional information){/usr/share/texlive/texmf-d
+ist/fonts/enc/dvips/inconsolata/i4-ts1.enc}{/usr/share/texlive/texmf-dist/fonts
+/enc/dvips/base/8r.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/inconsola
+ta/i4-t1-0.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/inconsolata/In
+consolata-zi4r.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr
+8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/urw/times/utmri8a.pfb>
+Output written on Rd2.pdf (7 pages, 90367 bytes).
 Transcript written on Rd2.log.
 Saving output to ‘multimolang-manual.pdf’ ...
 Done
-You may want to clean up by 'rm -Rf /tmp/RtmpNaqneZ/Rd2pdf144dfa794a1dff'
+You may want to clean up by 'rm -Rf /tmp/RtmpgPUAup/Rd2pdf102454da1a429'

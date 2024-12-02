@@ -1,0 +1,402 @@
+
+R version 4.2.2 Patched (2022-11-10 r83330) -- "Innocent and Trusting"
+Copyright (C) 2022 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> pkgname <- "multimolang"
+> source(file.path(R.home("share"), "R", "examples-header.R"))
+> options(warn = 1)
+> base::assign(".ExTimings", "multimolang-Ex.timings", pos = 'CheckExEnv')
+> base::cat("name\tuser\tsystem\telapsed\n", file=base::get(".ExTimings", pos = 'CheckExEnv'))
+> base::assign(".format_ptime",
++ function(x) {
++   if(!is.na(x[4L])) x[1L] <- x[1L] + x[4L]
++   if(!is.na(x[5L])) x[2L] <- x[2L] + x[5L]
++   options(OutDec = '.')
++   format(x[1L:3L], digits = 7L)
++ },
++ pos = 'CheckExEnv')
+> 
+> ### * </HEADER>
+> library('multimolang')
+> 
+> base::assign(".oldSearch", base::search(), pos = 'CheckExEnv')
+> base::assign(".old_wd", base::getwd(), pos = 'CheckExEnv')
+> cleanEx()
+> nameEx("dfMaker")
+> ### * dfMaker
+> 
+> flush(stderr()); flush(stdout())
+> 
+> base::assign(".ptime", proc.time(), pos = "CheckExEnv")
+> ### Name: dfMaker
+> ### Title: dfMaker Function
+> ### Aliases: dfMaker
+> 
+> ### ** Examples
+> 
+> # Example 1: Define paths to example data included with the package
+> input.folder <- system.file("extdata/ex_videos/o1",
++                             package = "multimolang")
+> output.file <- file.path(tempdir(), "processed_data.csv")
+> output.path <- tempdir()  # Use a temporary directory for writing output
+> 
+> # Run dfMaker with example data
+> df <- dfMaker(
++   input.folder = input.folder,
++   output.file = output.file,
++   output.path = output.path,
++   no_save = FALSE,
++   fast_scaling = TRUE,
++   transformation_coords = c(1, 1, 5, 5)
++ )
+Model: COCO_WholeBody
+
+The frame 0 has been read.
+
+The frame 1 has been read.
+
+The frame 2 has been read.
+
+The frame 3 has been read.
+
+The frame 4 has been read.
+
+The frame 5 has been read.
+
+The frame 6 has been read.
+
+The frame 7 has been read.
+
+The frame 8 has been read.
+
+The frame 9 has been read.
+
+The frame 10 has been read.
+
+The frame 11 has been read.
+
+The frame 12 has been read.
+
+The frame 13 has been read.
+
+The frame 14 has been read.
+
+The frame 15 has been read.
+
+The frame 16 has been read.
+
+The frame 17 has been read.
+
+The frame 18 has been read.
+
+The frame 19 has been read.
+
+The frame 20 has been read.
+
+The frame 21 has been read.
+
+The frame 22 has been read.
+
+The frame 23 has been read.
+
+The frame 24 has been read.
+
+The frame 25 has been read.
+
+The frame 26 has been read.
+
+The frame 27 has been read.
+
+The frame 28 has been read.
+
+The frame 29 has been read.
+
+The frame 30 has been read.
+
+The frame 31 has been read.
+
+The frame 32 has been read.
+
+The frame 33 has been read.
+
+The frame 34 has been read.
+
+The frame 35 has been read.
+
+The frame 36 has been read.
+
+The frame 37 has been read.
+
+The frame 38 has been read.
+
+The frame 39 has been read.
+
+The frame 40 has been read.
+
+The frame 41 has been read.
+
+The frame 42 has been read.
+
+The frame 43 has been read.
+
+The frame 44 has been read.
+
+The frame 45 has been read.
+
+The frame 46 has been read.
+
+The frame 47 has been read.
+
+The frame 48 has been read.
+
+The frame 49 has been read.
+
+The frame 50 has been read.
+
+The frame 51 has been read.
+
+The frame 52 has been read.
+
+The frame 53 has been read.
+
+The frame 54 has been read.
+
+The frame 55 has been read.
+
+The frame 56 has been read.
+
+The frame 57 has been read.
+
+The frame 58 has been read.
+
+The frame 59 has been read.
+> 
+> # View the first few rows of the resulting data frame
+> head(df)
+        x       y        c        nx            ny    type_points people_id
+1 223.083 112.692 0.892162  0.164693  0.7909624258 pose_keypoints         1
+2 209.412 178.349 0.700031  0.000000  0.0000000000 pose_keypoints         1
+3 130.946 178.386 0.522407 -0.945271 -0.0004457348 pose_keypoints         1
+4 112.691 273.264 0.273222 -1.165187 -1.1434302305 pose_keypoints         1
+5      NA      NA 0.000000        NA            NA pose_keypoints         1
+6 292.421 172.921 0.548348  1.000000  0.0653904998 pose_keypoints         1
+  points                                                            id frame
+1      0 2006-01-14_0600_US_KTTV-FOX_Ten_OClock_News_273-275_back_then     0
+2      1 2006-01-14_0600_US_KTTV-FOX_Ten_OClock_News_273-275_back_then     0
+3      2 2006-01-14_0600_US_KTTV-FOX_Ten_OClock_News_273-275_back_then     0
+4      3 2006-01-14_0600_US_KTTV-FOX_Ten_OClock_News_273-275_back_then     0
+5      4 2006-01-14_0600_US_KTTV-FOX_Ten_OClock_News_273-275_back_then     0
+6      5 2006-01-14_0600_US_KTTV-FOX_Ten_OClock_News_273-275_back_then     0
+> 
+> # Example 2: Using NewsScape data with a custom configuration file
+> 
+> # Define paths to example data
+> input.folder <- system.file("extdata/ex_videos/o1",
++                             package = "multimolang")
+> 
+> # Define the configuration file path
+> config.path <- system.file("extdata/config_all_true.json",
++                            package = "multimolang")
+> 
+> # Define output paths
+> output.file <- file.path(tempdir(), "processed_data.csv")
+> output.path <- tempdir()
+> 
+> # Run dfMaker with custom configuration
+> df <- dfMaker(
++   input.folder = input.folder,
++   config.path = config.path,
++   output.file = output.file,
++   output.path = output.path,
++   no_save = FALSE,
++   fast_scaling = TRUE,
++   transformation_coords = c(1, 1, 5, 5)
++ )
+Model: COCO_WholeBody
+
+The frame 0 has been read.
+
+The frame 1 has been read.
+
+The frame 2 has been read.
+
+The frame 3 has been read.
+
+The frame 4 has been read.
+
+The frame 5 has been read.
+
+The frame 6 has been read.
+
+The frame 7 has been read.
+
+The frame 8 has been read.
+
+The frame 9 has been read.
+
+The frame 10 has been read.
+
+The frame 11 has been read.
+
+The frame 12 has been read.
+
+The frame 13 has been read.
+
+The frame 14 has been read.
+
+The frame 15 has been read.
+
+The frame 16 has been read.
+
+The frame 17 has been read.
+
+The frame 18 has been read.
+
+The frame 19 has been read.
+
+The frame 20 has been read.
+
+The frame 21 has been read.
+
+The frame 22 has been read.
+
+The frame 23 has been read.
+
+The frame 24 has been read.
+
+The frame 25 has been read.
+
+The frame 26 has been read.
+
+The frame 27 has been read.
+
+The frame 28 has been read.
+
+The frame 29 has been read.
+
+The frame 30 has been read.
+
+The frame 31 has been read.
+
+The frame 32 has been read.
+
+The frame 33 has been read.
+
+The frame 34 has been read.
+
+The frame 35 has been read.
+
+The frame 36 has been read.
+
+The frame 37 has been read.
+
+The frame 38 has been read.
+
+The frame 39 has been read.
+
+The frame 40 has been read.
+
+The frame 41 has been read.
+
+The frame 42 has been read.
+
+The frame 43 has been read.
+
+The frame 44 has been read.
+
+The frame 45 has been read.
+
+The frame 46 has been read.
+
+The frame 47 has been read.
+
+The frame 48 has been read.
+
+The frame 49 has been read.
+
+The frame 50 has been read.
+
+The frame 51 has been read.
+
+The frame 52 has been read.
+
+The frame 53 has been read.
+
+The frame 54 has been read.
+
+The frame 55 has been read.
+
+The frame 56 has been read.
+
+The frame 57 has been read.
+
+The frame 58 has been read.
+
+The frame 59 has been read.
+> 
+> # View the first few rows
+> head(df)
+        x       y        c        nx            ny    type_points people_id
+1 223.083 112.692 0.892162  0.164693  0.7909624258 pose_keypoints         1
+2 209.412 178.349 0.700031  0.000000  0.0000000000 pose_keypoints         1
+3 130.946 178.386 0.522407 -0.945271 -0.0004457348 pose_keypoints         1
+4 112.691 273.264 0.273222 -1.165187 -1.1434302305 pose_keypoints         1
+5      NA      NA 0.000000        NA            NA pose_keypoints         1
+6 292.421 172.921 0.548348  1.000000  0.0653904998 pose_keypoints         1
+  points                                                            id frame
+1      0 2006-01-14_0600_US_KTTV-FOX_Ten_OClock_News_273-275_back_then     0
+2      1 2006-01-14_0600_US_KTTV-FOX_Ten_OClock_News_273-275_back_then     0
+3      2 2006-01-14_0600_US_KTTV-FOX_Ten_OClock_News_273-275_back_then     0
+4      3 2006-01-14_0600_US_KTTV-FOX_Ten_OClock_News_273-275_back_then     0
+5      4 2006-01-14_0600_US_KTTV-FOX_Ten_OClock_News_273-275_back_then     0
+6      5 2006-01-14_0600_US_KTTV-FOX_Ten_OClock_News_273-275_back_then     0
+  exp_search            datetime country_code network_code    program_name
+1  back_then 2006-01-14 06:00:00           US     KTTV-FOX Ten_OClock_News
+2  back_then 2006-01-14 06:00:00           US     KTTV-FOX Ten_OClock_News
+3  back_then 2006-01-14 06:00:00           US     KTTV-FOX Ten_OClock_News
+4  back_then 2006-01-14 06:00:00           US     KTTV-FOX Ten_OClock_News
+5  back_then 2006-01-14 06:00:00           US     KTTV-FOX Ten_OClock_News
+6  back_then 2006-01-14 06:00:00           US     KTTV-FOX Ten_OClock_News
+  time_range
+1    273-275
+2    273-275
+3    273-275
+4    273-275
+5    273-275
+6    273-275
+> 
+> 
+> 
+> 
+> base::assign(".dptime", (proc.time() - get(".ptime", pos = "CheckExEnv")), pos = "CheckExEnv")
+> base::cat("dfMaker", base::get(".format_ptime", pos = 'CheckExEnv')(get(".dptime", pos = "CheckExEnv")), "\n", file=base::get(".ExTimings", pos = 'CheckExEnv'), append=TRUE, sep="\t")
+> ### * <FOOTER>
+> ###
+> cleanEx()
+> options(digits = 7L)
+> base::cat("Time elapsed: ", proc.time() - base::get("ptime", pos = 'CheckExEnv'),"\n")
+Time elapsed:  1.13 0.074 1.19 0 0 
+> grDevices::dev.off()
+null device 
+          1 
+> ###
+> ### Local variables: ***
+> ### mode: outline-minor ***
+> ### outline-regexp: "\\(> \\)?### [*]+" ***
+> ### End: ***
+> quit('no')

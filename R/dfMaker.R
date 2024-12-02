@@ -129,18 +129,52 @@
 #' }
 #'
 #' @examples
-#' \dontrun{
-#' # Processing NewsScape data with a custom configuration file
+#' # Example 1: Define paths to example data included with the package
+#' input.folder <- system.file("extdata/ex_videos/o1",
+#'                             package = "multimolang")
+#' output.file <- file.path(tempdir(), "processed_data.csv")
+#' output.path <- tempdir()  # Use a temporary directory for writing output
+#'
+#' # Run dfMaker with example data
 #' df <- dfMaker(
-#'   input.folder = "path/to/OpenPose_outputs/json",
-#'   config.path = "path/to/config.json",
-#'   output.file = "news_scape_data.csv",
-#'   output.path = "output/directory",
+#'   input.folder = input.folder,
+#'   output.file = output.file,
+#'   output.path = output.path,
 #'   no_save = FALSE,
 #'   fast_scaling = TRUE,
 #'   transformation_coords = c(1, 1, 5, 5)
 #' )
-#' }
+#'
+#' # View the first few rows of the resulting data frame
+#' head(df)
+#'
+#' # Example 2: Using NewsScape data with a custom configuration file
+#'
+#' # Define paths to example data
+#' input.folder <- system.file("extdata/ex_videos/o1",
+#'                             package = "multimolang")
+#'
+#' # Define the configuration file path
+#' config.path <- system.file("extdata/config_all_true.json",
+#'                            package = "multimolang")
+#'
+#' # Define output paths
+#' output.file <- file.path(tempdir(), "processed_data.csv")
+#' output.path <- tempdir()
+#'
+#' # Run dfMaker with custom configuration
+#' df <- dfMaker(
+#'   input.folder = input.folder,
+#'   config.path = config.path,
+#'   output.file = output.file,
+#'   output.path = output.path,
+#'   no_save = FALSE,
+#'   fast_scaling = TRUE,
+#'   transformation_coords = c(1, 1, 5, 5)
+#' )
+#'
+#' # View the first few rows
+#' head(df)
 #'
 #' @references
 #' For more information about the UCLA NewsScape archive, visit the official website:
@@ -156,6 +190,7 @@
 #' \url{https://github.com/CMU-Perceptual-Computing-Lab/openpose}
 #'
 #' @import arrow
+#' @importFrom utils capture.output write.csv
 #' @export
 dfMaker <- function(
     input.folder,
@@ -366,7 +401,10 @@ dfMaker <- function(
                 transformed_coords <- matrix(NA, nrow = nrow(relative_coords), ncol = 2)
               } else {
                 transformed_coords <- relative_coords / scaling_factor                   # Scale
-                transformed_coords[, 2] <- -transformed_coords[, 2]                      # Invert y-axis
+                if (scaling_factor >= 0) {
+                  transformed_coords[, 2] <- -transformed_coords[, 2]                   # Invert y-axis if scaling_factor is positive
+                }
+                # If scaling_factor is negative, do not invert y-axis
               }
             } else {
               # Cannot perform transformation, set transformed_coords to NA

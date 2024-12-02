@@ -1,63 +1,63 @@
 # tests/testthat/test-dfMaker.R
 
 library(testthat)
-library(multimolang) # Asegúrate de que el nombre del paquete es correcto
+library(multimolang) # Ensure the package name is correct
 
-# Prueba general para dfMaker
+# General test for dfMaker
 test_that("dfMaker processes a folder and returns a data frame", {
-  # Usar la ruta del paquete
-  input_folder <- system.file("extdata", "example_videos", "output1", package = "multimolang")
+  # Use the package path
+  input_folder <- system.file("extdata", "ex_videos", "o1", package = "multimolang")
 
-  # Ejecutar dfMaker
+  # Run dfMaker
   result <- dfMaker(input.folder = input_folder, no_save = TRUE)
 
-  # Depuración: Mostrar información sobre el resultado
-  message("¿Es un data.frame?: ", is.data.frame(result))
+  # Debugging: Display information about the result
+  message("Is it a data.frame?: ", is.data.frame(result))
   if (is.data.frame(result)) {
-    message("Número de filas: ", nrow(result))
-    message("Columnas: ", paste(colnames(result), collapse = ", "))
+    message("Number of rows: ", nrow(result))
+    message("Columns: ", paste(colnames(result), collapse = ", "))
   }
 
-  # Comprobar que es un data.frame
-  expect_true(is.data.frame(result), "El resultado no es un data.frame")
+  # Check that the result is a data frame
+  expect_true(is.data.frame(result), "The result is not a data.frame")
 
-  # Comprobar que no está vacío
-  expect_gt(nrow(result), 0, "El resultado está vacío")
+  # Check that it is not empty
+  expect_gt(nrow(result), 0, "The result is empty")
 
-  # Comprobar que contiene las columnas esperadas
+  # Check that it contains the expected columns
   expected_columns <- c("x", "y", "c", "nx", "ny", "type_points", "people_id", "points", "id", "frame")
-  expect_true(all(expected_columns %in% colnames(result)), "Faltan columnas esperadas")
+  expect_true(all(expected_columns %in% colnames(result)), "Missing expected columns")
 })
 
-# Prueba para fast_scaling = TRUE (solo pose_keypoints)
+# Test for fast_scaling = TRUE (pose_keypoints only)
 test_that("Origin and scaling points are correctly transformed with fast_scaling = TRUE for pose_keypoints", {
-  # Definir la carpeta de entrada con los datos de ejemplo usando system.file()
-  input_folder <- system.file("extdata", "example_videos", "output1", package = "multimolang")
+  # Define the input folder with example data using system.file()
+  input_folder <- system.file("extdata", "ex_videos", "o1", package = "multimolang")
 
-  # Verificar que la carpeta de entrada existe
-  expect_true(dir.exists(input_folder), "La carpeta de entrada no existe")
+  # Verify that the input folder exists
+  expect_true(dir.exists(input_folder), "The input folder does not exist")
 
-  # Definir los tipos de puntos y sus coordenadas de transformación
+  # Define the keypoint types and their transformation coordinates
   keypoint_types <- list(
     "1" = c(1, 1, 5, 5) # pose_keypoints
   )
 
-  # Iterar sobre cada tipo de punto y verificar las transformaciones
+  # Iterate over each keypoint type and verify transformations
   for (type_code in names(keypoint_types)) {
     transformation_coords <- keypoint_types[[type_code]]
     verify_transformation(as.numeric(type_code), transformation_coords, input_folder, fast_scaling = TRUE)
   }
 })
 
-# Prueba para fast_scaling = FALSE (incluyendo pose_keypoints)
+# Test for fast_scaling = FALSE (including pose_keypoints)
 test_that("Origin and scaling points are correctly transformed with fast_scaling = FALSE for all keypoints", {
-  # Definir la carpeta de entrada con los datos de ejemplo usando system.file()
-  input_folder <- system.file("extdata", "example_videos", "output1", package = "multimolang")
+  # Define the input folder with example data using system.file()
+  input_folder <- system.file("extdata", "ex_videos", "o1", package = "multimolang")
 
-  # Verificar que la carpeta de entrada existe
-  expect_true(dir.exists(input_folder), "La carpeta de entrada no existe")
+  # Verify that the input folder exists
+  expect_true(dir.exists(input_folder), "The input folder does not exist")
 
-  # Definir los tipos de puntos y sus coordenadas de transformación
+  # Define the keypoint types and their transformation coordinates
   keypoint_types <- list(
     "1" = c(1, 1, 5, 5), # pose_keypoints
     "2" = c(2, 1, 5, 5), # face_keypoints
@@ -65,41 +65,41 @@ test_that("Origin and scaling points are correctly transformed with fast_scaling
     "4" = c(4, 1, 5, 5)  # hand_right_keypoints
   )
 
-  # Iterar sobre cada tipo de punto y verificar las transformaciones
+  # Iterate over each keypoint type and verify transformations
   for (type_code in names(keypoint_types)) {
     transformation_coords <- keypoint_types[[type_code]]
     verify_transformation(as.numeric(type_code), transformation_coords, input_folder, fast_scaling = FALSE)
   }
 })
 
-
+# Test with a custom configuration file where all values are set to true
 test_that("dfMaker processes a folder using a custom configuration file with all true values", {
-  # Usar la ruta del paquete para los datos de entrada
-  input_folder <- system.file("extdata", "example_videos", "output1", package = "multimolang")
-  expect_true(dir.exists(input_folder), "La carpeta de entrada no existe")
+  # Use the package path for the input data
+  input_folder <- system.file("extdata", "ex_videos", "o1", package = "multimolang")
+  expect_true(dir.exists(input_folder), "The input folder does not exist")
 
-  # Ruta del archivo de configuración (config_all_true.json)
+  # Path to the configuration file (config_all_true.json)
   config_file <- system.file("extdata", "config_all_true.json", package = "multimolang")
-  expect_true(file.exists(config_file), "El archivo de configuración no existe")
+  expect_true(file.exists(config_file), "The configuration file does not exist")
 
-  # Ejecutar dfMaker con el archivo de configuración
+  # Run dfMaker with the configuration file
   result <- dfMaker(input.folder = input_folder, config.path = config_file, no_save = TRUE)
 
-  # Comprobar que el resultado es un data.frame
-  expect_true(is.data.frame(result), "El resultado no es un data.frame")
+  # Check that the result is a data frame
+  expect_true(is.data.frame(result), "The result is not a data.frame")
 
-  # Comprobar que no está vacío
-  expect_gt(nrow(result), 0, "El resultado está vacío")
+  # Check that it is not empty
+  expect_gt(nrow(result), 0, "The result is empty")
 
-  # Depuración: Mostrar información sobre la configuración utilizada
-  message("Archivo de configuración utilizado: ", config_file)
+  # Debugging: Display information about the configuration used
+  message("Configuration file used: ", config_file)
 
-  # Comprobar que se aplicaron todas las configuraciones (ejemplo: timezone)
+  # Check that all configurations were applied (example: timezone)
   timezone_column <- "timezone"
   if (timezone_column %in% colnames(result)) {
-    expect_equal(unique(result[[timezone_column]]), "America/Los_Angeles", "La zona horaria no coincide con el archivo de configuración")
+    expect_equal(unique(result[[timezone_column]]), "America/Los_Angeles", "The timezone does not match the configuration file")
   } else {
-    warning("No se encontró la columna de zona horaria en el resultado")
+    warning("The timezone column was not found in the result")
     print(colnames(result))
     print(result[1,])
   }

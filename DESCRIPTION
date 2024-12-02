@@ -9,14 +9,16 @@ License: AGPL-3
 Encoding: UTF-8
 Depends: R (>= 4.1.0)
 Imports: 
-    arrow
+    arrow,
 Suggests:
+    roxygen2 (>= 7.0.0),
     testthat (>= 3.0.0),
-    roxygen2,
     knitr,
     rmarkdown
-URL: https://github.com/tu_usuario/multimolang
-BugReports: https://github.com/tu_usuario/multimolang/issues
+URL: https://github.com/daedalusLAB/multimolang.git
+BugReports: https://github.com/daedalusLAB/multimolang/issues
+LazyData: true
+Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
-Config/testthat/edition: 3
 VignetteBuilder: knitr
+Keywords: multimodal, language, OpenPose, analysis
