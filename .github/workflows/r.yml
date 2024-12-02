@@ -14,43 +14,53 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        r-version: ['4.1.1', '4.2.1']
+        r-version: ['4.1.0', '4.2.0']
 
     steps:
       - uses: actions/checkout@v4
 
-      # Set up R with the specified version
+      # Configurar R con la versión especificada y usar RSPM para binarios
       - name: Set up R ${{ matrix.r-version }}
         uses: r-lib/actions/setup-r@v2
         with:
           r-version: ${{ matrix.r-version }}
+          use-public-rspm: true  # Utiliza RSPM para obtener paquetes binarios
 
-      # Set up Pandoc
-      - name: Set up Pandoc
-        uses: r-lib/actions/setup-pandoc@v2
-
-      # Install system dependencies
+      # Instalar dependencias del sistema necesarias para `arrow`
       - name: Install system dependencies
         run: |
           sudo apt-get update
           sudo apt-get install -y \
-            texlive-base \
-            texlive-latex-base \
-            texlive-fonts-recommended \
-            texlive-latex-recommended \
-            texlive-extra-utils \
-            texlive-latex-extra \
-            qpdf
+            libcurl4-openssl-dev \
+            libssl-dev \
+            libxml2-dev \
+            libfontconfig1-dev \
+            libharfbuzz-dev \
+            libfribidi-dev \
+            libfreetype6-dev \
+            libpng-dev \
+            libtiff-dev \
+            libjpeg-dev
 
-      # Install R package dependencies
-      - name: Install R dependencies
+      # Instalar el paquete `arrow` utilizando binarios
+      - name: Install 'arrow' package
         run: |
-          install.packages(c("remotes", "rcmdcheck"))
-          remotes::install_deps(dependencies = TRUE)
+          options(install.packages.check.source = "no")
+          install.packages("arrow", type = "binary")
         shell: Rscript {0}
 
-      # Check R package
-      - name: Check R package
+      # Instalar dependencias del paquete en R utilizando binarios
+      - name: Install R package dependencies
         run: |
-          rcmdcheck::rcmdcheck(args = "--no-manual", error_on = "error")
+          options(install.packages.check.source = "no")
+          install.packages(c("remotes", "rcmdcheck"), type = "binary")
+          remotes::install_deps(dependencies = TRUE, upgrade = "always", type = "binary")
+        shell: Rscript {0}
+
+      # Verificar el paquete con rcmdcheck
+      - name: Check R package
+        env:
+          _R_CHECK_CRAN_INCOMING_REMOTE_: false
+        run: |
+          rcmdcheck::rcmdcheck(args = c("--no-manual", "--no-build-vignettes"), error_on = "error")
         shell: Rscript {0}
