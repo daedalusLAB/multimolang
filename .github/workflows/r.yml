@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        r-version: ['4.1.0', '4.2.0']
+        r-version: ['4.1.1', '4.2.1']
 
     steps:
       - uses: actions/checkout@v4
@@ -25,7 +25,11 @@ jobs:
         with:
           r-version: ${{ matrix.r-version }}
 
-      # Instalar dependencias del sistema necesarias para `arrow`
+      # Configurar Pandoc
+      - name: Set up Pandoc
+        uses: r-lib/actions/setup-pandoc@v2
+
+      # Instalar dependencias del sistema necesarias para `arrow` y construcción de viñetas
       - name: Install system dependencies
         run: |
           sudo apt-get update
@@ -42,12 +46,19 @@ jobs:
             libjpeg-dev \
             cmake \
             make \
-            g++
+            g++ \
+            qpdf \
+            texlive-base \
+            texlive-latex-base \
+            texlive-fonts-recommended \
+            texlive-latex-recommended \
+            texlive-extra-utils \
+            texlive-latex-extra
 
-      # Instalar el paquete `arrow` desde el código fuente
+      # Instalar el paquete `arrow` utilizando binarios si es posible
       - name: Install 'arrow' package
         run: |
-          install.packages("arrow", repos = "https://cloud.r-project.org")
+          install.packages("arrow")
         shell: Rscript {0}
 
       # Instalar dependencias del paquete en R
@@ -62,5 +73,5 @@ jobs:
         env:
           _R_CHECK_CRAN_INCOMING_REMOTE_: false
         run: |
-          rcmdcheck::rcmdcheck(args = c("--no-manual", "--no-build-vignettes"), error_on = "error")
+          rcmdcheck::rcmdcheck(error_on = "error")
         shell: Rscript {0}
