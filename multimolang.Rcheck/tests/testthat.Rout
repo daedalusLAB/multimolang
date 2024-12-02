@@ -1,0 +1,899 @@
+
+R version 4.4.2 (2024-10-31) -- "Pile of Leaves"
+Copyright (C) 2024 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> # This file is part of the standard setup for testthat.
+> # It is recommended that you do not modify it.
+> #
+> # Where should you do additional test configuration?
+> # Learn more about the roles of various files in:
+> # * https://r-pkgs.org/testing-design.html#sec-tests-files-overview
+> # * https://testthat.r-lib.org/articles/special-files.html
+> 
+> library(testthat)
+> library(multimolang)
+> 
+> test_check("multimolang")
+Model: COCO_WholeBody
+
+The frame 0 has been read.
+
+The frame 1 has been read.
+
+The frame 2 has been read.
+
+The frame 3 has been read.
+
+The frame 4 has been read.
+
+The frame 5 has been read.
+
+The frame 6 has been read.
+
+The frame 7 has been read.
+
+The frame 8 has been read.
+
+The frame 9 has been read.
+
+The frame 10 has been read.
+
+The frame 11 has been read.
+
+The frame 12 has been read.
+
+The frame 13 has been read.
+
+The frame 14 has been read.
+
+The frame 15 has been read.
+
+The frame 16 has been read.
+
+The frame 17 has been read.
+
+The frame 18 has been read.
+
+The frame 19 has been read.
+
+The frame 20 has been read.
+
+The frame 21 has been read.
+
+The frame 22 has been read.
+
+The frame 23 has been read.
+
+The frame 24 has been read.
+
+The frame 25 has been read.
+
+The frame 26 has been read.
+
+The frame 27 has been read.
+
+The frame 28 has been read.
+
+The frame 29 has been read.
+
+The frame 30 has been read.
+
+The frame 31 has been read.
+
+The frame 32 has been read.
+
+The frame 33 has been read.
+
+The frame 34 has been read.
+
+The frame 35 has been read.
+
+The frame 36 has been read.
+
+The frame 37 has been read.
+
+The frame 38 has been read.
+
+The frame 39 has been read.
+
+The frame 40 has been read.
+
+The frame 41 has been read.
+
+The frame 42 has been read.
+
+The frame 43 has been read.
+
+The frame 44 has been read.
+
+The frame 45 has been read.
+
+The frame 46 has been read.
+
+The frame 47 has been read.
+
+The frame 48 has been read.
+
+The frame 49 has been read.
+
+The frame 50 has been read.
+
+The frame 51 has been read.
+
+The frame 52 has been read.
+
+The frame 53 has been read.
+
+The frame 54 has been read.
+
+The frame 55 has been read.
+
+The frame 56 has been read.
+
+The frame 57 has been read.
+
+The frame 58 has been read.
+
+The frame 59 has been read.
+¿Es un data.frame?: TRUE
+Número de filas: 8220
+Columnas: x, y, c, nx, ny, type_points, people_id, points, id, frame
+Model: COCO_WholeBody
+
+The frame 0 has been read.
+
+The frame 1 has been read.
+
+The frame 2 has been read.
+
+The frame 3 has been read.
+
+The frame 4 has been read.
+
+The frame 5 has been read.
+
+The frame 6 has been read.
+
+The frame 7 has been read.
+
+The frame 8 has been read.
+
+The frame 9 has been read.
+
+The frame 10 has been read.
+
+The frame 11 has been read.
+
+The frame 12 has been read.
+
+The frame 13 has been read.
+
+The frame 14 has been read.
+
+The frame 15 has been read.
+
+The frame 16 has been read.
+
+The frame 17 has been read.
+
+The frame 18 has been read.
+
+The frame 19 has been read.
+
+The frame 20 has been read.
+
+The frame 21 has been read.
+
+The frame 22 has been read.
+
+The frame 23 has been read.
+
+The frame 24 has been read.
+
+The frame 25 has been read.
+
+The frame 26 has been read.
+
+The frame 27 has been read.
+
+The frame 28 has been read.
+
+The frame 29 has been read.
+
+The frame 30 has been read.
+
+The frame 31 has been read.
+
+The frame 32 has been read.
+
+The frame 33 has been read.
+
+The frame 34 has been read.
+
+The frame 35 has been read.
+
+The frame 36 has been read.
+
+The frame 37 has been read.
+
+The frame 38 has been read.
+
+The frame 39 has been read.
+
+The frame 40 has been read.
+
+The frame 41 has been read.
+
+The frame 42 has been read.
+
+The frame 43 has been read.
+
+The frame 44 has been read.
+
+The frame 45 has been read.
+
+The frame 46 has been read.
+
+The frame 47 has been read.
+
+The frame 48 has been read.
+
+The frame 49 has been read.
+
+The frame 50 has been read.
+
+The frame 51 has been read.
+
+The frame 52 has been read.
+
+The frame 53 has been read.
+
+The frame 54 has been read.
+
+The frame 55 has been read.
+
+The frame 56 has been read.
+
+The frame 57 has been read.
+
+The frame 58 has been read.
+
+The frame 59 has been read.
+Model: COCO_WholeBody
+
+The frame 0 has been read.
+
+The frame 1 has been read.
+
+The frame 2 has been read.
+
+The frame 3 has been read.
+
+The frame 4 has been read.
+
+The frame 5 has been read.
+
+The frame 6 has been read.
+
+The frame 7 has been read.
+
+The frame 8 has been read.
+
+The frame 9 has been read.
+
+The frame 10 has been read.
+
+The frame 11 has been read.
+
+The frame 12 has been read.
+
+The frame 13 has been read.
+
+The frame 14 has been read.
+
+The frame 15 has been read.
+
+The frame 16 has been read.
+
+The frame 17 has been read.
+
+The frame 18 has been read.
+
+The frame 19 has been read.
+
+The frame 20 has been read.
+
+The frame 21 has been read.
+
+The frame 22 has been read.
+
+The frame 23 has been read.
+
+The frame 24 has been read.
+
+The frame 25 has been read.
+
+The frame 26 has been read.
+
+The frame 27 has been read.
+
+The frame 28 has been read.
+
+The frame 29 has been read.
+
+The frame 30 has been read.
+
+The frame 31 has been read.
+
+The frame 32 has been read.
+
+The frame 33 has been read.
+
+The frame 34 has been read.
+
+The frame 35 has been read.
+
+The frame 36 has been read.
+
+The frame 37 has been read.
+
+The frame 38 has been read.
+
+The frame 39 has been read.
+
+The frame 40 has been read.
+
+The frame 41 has been read.
+
+The frame 42 has been read.
+
+The frame 43 has been read.
+
+The frame 44 has been read.
+
+The frame 45 has been read.
+
+The frame 46 has been read.
+
+The frame 47 has been read.
+
+The frame 48 has been read.
+
+The frame 49 has been read.
+
+The frame 50 has been read.
+
+The frame 51 has been read.
+
+The frame 52 has been read.
+
+The frame 53 has been read.
+
+The frame 54 has been read.
+
+The frame 55 has been read.
+
+The frame 56 has been read.
+
+The frame 57 has been read.
+
+The frame 58 has been read.
+
+The frame 59 has been read.
+Model: COCO_WholeBody
+
+The frame 0 has been read.
+
+The frame 1 has been read.
+
+The frame 2 has been read.
+
+The frame 3 has been read.
+
+The frame 4 has been read.
+
+The frame 5 has been read.
+
+The frame 6 has been read.
+
+The frame 7 has been read.
+
+The frame 8 has been read.
+
+The frame 9 has been read.
+
+The frame 10 has been read.
+
+The frame 11 has been read.
+
+The frame 12 has been read.
+
+The frame 13 has been read.
+
+The frame 14 has been read.
+
+The frame 15 has been read.
+
+The frame 16 has been read.
+
+The frame 17 has been read.
+
+The frame 18 has been read.
+
+The frame 19 has been read.
+
+The frame 20 has been read.
+
+The frame 21 has been read.
+
+The frame 22 has been read.
+
+The frame 23 has been read.
+
+The frame 24 has been read.
+
+The frame 25 has been read.
+
+The frame 26 has been read.
+
+The frame 27 has been read.
+
+The frame 28 has been read.
+
+The frame 29 has been read.
+
+The frame 30 has been read.
+
+The frame 31 has been read.
+
+The frame 32 has been read.
+
+The frame 33 has been read.
+
+The frame 34 has been read.
+
+The frame 35 has been read.
+
+The frame 36 has been read.
+
+The frame 37 has been read.
+
+The frame 38 has been read.
+
+The frame 39 has been read.
+
+The frame 40 has been read.
+
+The frame 41 has been read.
+
+The frame 42 has been read.
+
+The frame 43 has been read.
+
+The frame 44 has been read.
+
+The frame 45 has been read.
+
+The frame 46 has been read.
+
+The frame 47 has been read.
+
+The frame 48 has been read.
+
+The frame 49 has been read.
+
+The frame 50 has been read.
+
+The frame 51 has been read.
+
+The frame 52 has been read.
+
+The frame 53 has been read.
+
+The frame 54 has been read.
+
+The frame 55 has been read.
+
+The frame 56 has been read.
+
+The frame 57 has been read.
+
+The frame 58 has been read.
+
+The frame 59 has been read.
+Model: COCO_WholeBody
+
+The frame 0 has been read.
+
+The frame 1 has been read.
+
+The frame 2 has been read.
+
+The frame 3 has been read.
+
+The frame 4 has been read.
+
+The frame 5 has been read.
+
+The frame 6 has been read.
+
+The frame 7 has been read.
+
+The frame 8 has been read.
+
+The frame 9 has been read.
+
+The frame 10 has been read.
+
+The frame 11 has been read.
+
+The frame 12 has been read.
+
+The frame 13 has been read.
+
+The frame 14 has been read.
+
+The frame 15 has been read.
+
+The frame 16 has been read.
+
+The frame 17 has been read.
+
+The frame 18 has been read.
+
+The frame 19 has been read.
+
+The frame 20 has been read.
+
+The frame 21 has been read.
+
+The frame 22 has been read.
+
+The frame 23 has been read.
+
+The frame 24 has been read.
+
+The frame 25 has been read.
+
+The frame 26 has been read.
+
+The frame 27 has been read.
+
+The frame 28 has been read.
+
+The frame 29 has been read.
+
+The frame 30 has been read.
+
+The frame 31 has been read.
+
+The frame 32 has been read.
+
+The frame 33 has been read.
+
+The frame 34 has been read.
+
+The frame 35 has been read.
+
+The frame 36 has been read.
+
+The frame 37 has been read.
+
+The frame 38 has been read.
+
+The frame 39 has been read.
+
+The frame 40 has been read.
+
+The frame 41 has been read.
+
+The frame 42 has been read.
+
+The frame 43 has been read.
+
+The frame 44 has been read.
+
+The frame 45 has been read.
+
+The frame 46 has been read.
+
+The frame 47 has been read.
+
+The frame 48 has been read.
+
+The frame 49 has been read.
+
+The frame 50 has been read.
+
+The frame 51 has been read.
+
+The frame 52 has been read.
+
+The frame 53 has been read.
+
+The frame 54 has been read.
+
+The frame 55 has been read.
+
+The frame 56 has been read.
+
+The frame 57 has been read.
+
+The frame 58 has been read.
+
+The frame 59 has been read.
+Model: COCO_WholeBody
+
+The frame 0 has been read.
+
+The frame 1 has been read.
+
+The frame 2 has been read.
+
+The frame 3 has been read.
+
+The frame 4 has been read.
+
+The frame 5 has been read.
+
+The frame 6 has been read.
+
+The frame 7 has been read.
+
+The frame 8 has been read.
+
+The frame 9 has been read.
+
+The frame 10 has been read.
+
+The frame 11 has been read.
+
+The frame 12 has been read.
+
+The frame 13 has been read.
+
+The frame 14 has been read.
+
+The frame 15 has been read.
+
+The frame 16 has been read.
+
+The frame 17 has been read.
+
+The frame 18 has been read.
+
+The frame 19 has been read.
+
+The frame 20 has been read.
+
+The frame 21 has been read.
+
+The frame 22 has been read.
+
+The frame 23 has been read.
+
+The frame 24 has been read.
+
+The frame 25 has been read.
+
+The frame 26 has been read.
+
+The frame 27 has been read.
+
+The frame 28 has been read.
+
+The frame 29 has been read.
+
+The frame 30 has been read.
+
+The frame 31 has been read.
+
+The frame 32 has been read.
+
+The frame 33 has been read.
+
+The frame 34 has been read.
+
+The frame 35 has been read.
+
+The frame 36 has been read.
+
+The frame 37 has been read.
+
+The frame 38 has been read.
+
+The frame 39 has been read.
+
+The frame 40 has been read.
+
+The frame 41 has been read.
+
+The frame 42 has been read.
+
+The frame 43 has been read.
+
+The frame 44 has been read.
+
+The frame 45 has been read.
+
+The frame 46 has been read.
+
+The frame 47 has been read.
+
+The frame 48 has been read.
+
+The frame 49 has been read.
+
+The frame 50 has been read.
+
+The frame 51 has been read.
+
+The frame 52 has been read.
+
+The frame 53 has been read.
+
+The frame 54 has been read.
+
+The frame 55 has been read.
+
+The frame 56 has been read.
+
+The frame 57 has been read.
+
+The frame 58 has been read.
+
+The frame 59 has been read.
+Model: COCO_WholeBody
+
+The frame 0 has been read.
+
+The frame 1 has been read.
+
+The frame 2 has been read.
+
+The frame 3 has been read.
+
+The frame 4 has been read.
+
+The frame 5 has been read.
+
+The frame 6 has been read.
+
+The frame 7 has been read.
+
+The frame 8 has been read.
+
+The frame 9 has been read.
+
+The frame 10 has been read.
+
+The frame 11 has been read.
+
+The frame 12 has been read.
+
+The frame 13 has been read.
+
+The frame 14 has been read.
+
+The frame 15 has been read.
+
+The frame 16 has been read.
+
+The frame 17 has been read.
+
+The frame 18 has been read.
+
+The frame 19 has been read.
+
+The frame 20 has been read.
+
+The frame 21 has been read.
+
+The frame 22 has been read.
+
+The frame 23 has been read.
+
+The frame 24 has been read.
+
+The frame 25 has been read.
+
+The frame 26 has been read.
+
+The frame 27 has been read.
+
+The frame 28 has been read.
+
+The frame 29 has been read.
+
+The frame 30 has been read.
+
+The frame 31 has been read.
+
+The frame 32 has been read.
+
+The frame 33 has been read.
+
+The frame 34 has been read.
+
+The frame 35 has been read.
+
+The frame 36 has been read.
+
+The frame 37 has been read.
+
+The frame 38 has been read.
+
+The frame 39 has been read.
+
+The frame 40 has been read.
+
+The frame 41 has been read.
+
+The frame 42 has been read.
+
+The frame 43 has been read.
+
+The frame 44 has been read.
+
+The frame 45 has been read.
+
+The frame 46 has been read.
+
+The frame 47 has been read.
+
+The frame 48 has been read.
+
+The frame 49 has been read.
+
+The frame 50 has been read.
+
+The frame 51 has been read.
+
+The frame 52 has been read.
+
+The frame 53 has been read.
+
+The frame 54 has been read.
+
+The frame 55 has been read.
+
+The frame 56 has been read.
+
+The frame 57 has been read.
+
+The frame 58 has been read.
+
+The frame 59 has been read.
+Archivo de configuración utilizado: /export/home/brian/git_projects/multimolang/multimolang.Rcheck/multimolang/extdata/config_all_true.json
+ [1] "x"            "y"            "c"            "nx"           "ny"          
+ [6] "type_points"  "people_id"    "points"       "id"           "frame"       
+[11] "exp_search"   "datetime"     "country_code" "network_code" "program_name"
+[16] "time_range"  
+        x       y        c       nx        ny    type_points people_id points
+1 223.083 112.692 0.892162 0.164693 0.7909624 pose_keypoints         1      0
+                                                                   id frame
+1 2006-01-14_0600_US_KTTV-FOX_Ten_OClock_News_273-275_ID202_back_then     0
+  exp_search            datetime country_code network_code    program_name
+1  back_then 2006-01-14 06:00:00           US     KTTV-FOX Ten_OClock_News
+  time_range
+1    273-275
+[ FAIL 0 | WARN 1 | SKIP 0 | PASS 39 ]
+
+[ FAIL 0 | WARN 1 | SKIP 0 | PASS 39 ]
+> 
+> proc.time()
+   user  system elapsed 
+  6.553   0.387   6.701 

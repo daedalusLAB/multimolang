@@ -1,0 +1,10 @@
+{
+    "extract_datetime": true,
+    "extract_time": true,
+    "extract_exp_search": true,
+    "extract_country_code": true,
+    "extract_network_code": true,
+    "extract_program_name": true,
+    "extract_time_range": true,
+    "timezone": "America/Los_Angeles"
+}
