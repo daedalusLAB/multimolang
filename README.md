@@ -10,7 +10,7 @@ The first implemented tool, `dfMaker`, processes raw OpenPose data into structur
   
   ```R
 # Install from the local tar.gz file
-install.packages("multimolang_0.1.0.tar.gz", repos = NULL, type = "source")
+install.packages("multimolang_0.1.1.tar.gz", repos = NULL, type = "source")
 
 # Or install using devtools
 devtools::install_github("daedalusLAB/multimolang")
