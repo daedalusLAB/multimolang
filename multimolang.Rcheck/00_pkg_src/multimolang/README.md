@@ -62,12 +62,12 @@ head(df)
   |------------------------------------------|-----------------------------------------------------------------------------------------------------|
   | **Package Name**                         | Defined and unique in CRAN (planned for submission).                                                |
   | **DESCRIPTION File**                     | Complete with title, description, authors, maintainer, version, and dependencies.                   |
-  | **License**                              | Pending.                                                                                             |
+  | **License**                              | LGPL-3                                                                                             |
   | **Documentation**                        | Complete for the `dfMaker` function, with examples.                                                 |
   | **NEWS File**                            | Not included; optional for the first version.                                                       |
   | **Tests**                                | Implemented to ensure proper functionality.                                                         |
   | **README**                               | Included here.                                                                                      |
-  | **Cross-Platform Compatibility**         | Pending testing on multiple operating systems.                                                      |
+  | **Cross-Platform Compatibility**         |  Tested on Linux and Windows OS operating systems.                                                      |
   | **Included Functions**                   | Includes `dfMaker`; additional tools planned for multimodal analysis in future updates.              |
   
   **Note:** Future updates will incorporate tools for prosody and voice analysis, as well as co-speech gesture processing.
@@ -76,7 +76,7 @@ head(df)
   
   ## **About MULTIFLOW**
   
-  The **MULTIFLOW** project investigates the interplay between gesture, prosody, and language to uncover multimodal signatures in communication. Learn more about our research and goals [here](https://daedalus.um.es/?page_id=32).
+  The **MULTIFLOW** project investigates the interplay between gesture, prosody, and language to uncover multimodal signatures in communication. Learn more about our research and goals.
 
 ### Publications in Preparation
 
@@ -96,7 +96,7 @@ head(df)
   ## **See Also**
   
   - [dfMaker GitHub Repository](https://github.com/daedalusLAB/dfMaker)
-- [MULTIFLOW Project Page](https://daedalus.um.es/?page_id=32)
+
 
 --- 
   

@@ -1,6 +1,18 @@
 pkgname <- "multimolang"
 source(file.path(R.home("share"), "R", "examples-header.R"))
 options(warn = 1)
+base::assign(".ExTimings", "multimolang-Ex.timings", pos = 'CheckExEnv')
+base::cat("name\tuser\tsystem\telapsed\n", file=base::get(".ExTimings", pos = 'CheckExEnv'))
+base::assign(".format_ptime",
+function(x) {
+  if(!is.na(x[4L])) x[1L] <- x[1L] + x[4L]
+  if(!is.na(x[5L])) x[2L] <- x[2L] + x[5L]
+  options(OutDec = '.')
+  format(x[1L:3L], digits = 7L)
+},
+pos = 'CheckExEnv')
+
+### * </HEADER>
 library('multimolang')
 
 base::assign(".oldSearch", base::search(), pos = 'CheckExEnv')
@@ -11,6 +23,7 @@ nameEx("dfMaker")
 
 flush(stderr()); flush(stdout())
 
+base::assign(".ptime", proc.time(), pos = "CheckExEnv")
 ### Name: dfMaker
 ### Title: dfMaker Function
 ### Aliases: dfMaker
@@ -18,7 +31,7 @@ flush(stderr()); flush(stdout())
 ### ** Examples
 
 # Example 1: Define paths to example data included with the package
-input.folder <- system.file("extdata/ex_videos/o1",
+input.folder <- system.file("extdata/eg/o1",
                             package = "multimolang")
 output.file <- file.path(tempdir(), "processed_data.csv")
 output.path <- tempdir()  # Use a temporary directory for writing output
@@ -39,7 +52,7 @@ head(df)
 # Example 2: Using NewsScape data with a custom configuration file
 
 # Define paths to example data
-input.folder <- system.file("extdata/ex_videos/o1",
+input.folder <- system.file("extdata/eg/o1",
                             package = "multimolang")
 
 # Define the configuration file path
@@ -67,6 +80,8 @@ head(df)
 
 
 
+base::assign(".dptime", (proc.time() - get(".ptime", pos = "CheckExEnv")), pos = "CheckExEnv")
+base::cat("dfMaker", base::get(".format_ptime", pos = 'CheckExEnv')(get(".dptime", pos = "CheckExEnv")), "\n", file=base::get(".ExTimings", pos = 'CheckExEnv'), append=TRUE, sep="\t")
 ### * <FOOTER>
 ###
 cleanEx()

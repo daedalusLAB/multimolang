@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.12.2)  2 DEC 2024 22:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.12.2)  3 DEC 2024 03:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -362,7 +362,7 @@ File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count290
 \l__pdf_internal_box=\box58
 )
-(/tmp/Rtmps6fopD/Rd2pdfb32618ce264f/Rd2.aux)
+(/tmp/Rtmp3e3HyE/Rd2pdf65b8505e0751/Rd2.aux)
 \openout1 = `Rd2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
@@ -399,8 +399,8 @@ LaTeX Font Info:    ... okay on input line 8.
 \everyMPtoPDFconversion=\toks29
 )
 Package hyperref Info: Link coloring ON on input line 8.
- (/tmp/Rtmps6fopD/Rd2pdfb32618ce264f/Rd2.out)
-(/tmp/Rtmps6fopD/Rd2pdfb32618ce264f/Rd2.out)
+ (/tmp/Rtmp3e3HyE/Rd2pdf65b8505e0751/Rd2.out)
+(/tmp/Rtmp3e3HyE/Rd2pdf65b8505e0751/Rd2.out)
 \@outlinefile=\write4
 \openout4 = `Rd2.out'.
 
@@ -430,13 +430,13 @@ LaTeX Font Info:    Trying to load font information for U+rsfs on input line 28
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 39
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 38
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
-(/tmp/Rtmps6fopD/Rd2pdfb32618ce264f/Rd2.toc)
+(/tmp/Rtmp3e3HyE/Rd2pdf65b8505e0751/Rd2.toc)
 \tf@toc=\write5
 \openout5 = `Rd2.toc'.
 
@@ -444,25 +444,25 @@ File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
-Overfull \hbox (23.83842pt too wide) in paragraph at lines 80--82
+Overfull \hbox (23.83842pt too wide) in paragraph at lines 79--81
 []\T1/ptm/m/n/10 Logical. If []\T1/zi4/m/n/10 TRUE[]\T1/ptm/m/n/10 , uses fast 
 scal-ing for trans-for-ma-tion. \T1/ptm/b/n/10 Warn-ing: \T1/ptm/m/n/10 When []
 \T1/zi4/m/n/10 fast_scaling
  []
 
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
-01.
+00.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-Overfull \hbox (11.73788pt too wide) in paragraph at lines 115--116
+Overfull \hbox (11.73788pt too wide) in paragraph at lines 114--115
 []\T1/ptm/m/n/10 When pro-cess-ing data with mul-ti-ple unique []\T1/zi4/m/n/10
  id []\T1/ptm/m/n/10 val-ues, en-sure that you pro-vide an ex-plicit []\T1/zi4/
 m/n/10 output.file
  []
 
 
-Overfull \hbox (74.19958pt too wide) in paragraph at lines 132--133
+Overfull \hbox (74.19958pt too wide) in paragraph at lines 131--132
 []\T1/ptm/m/n/10 Character. Type of key-points (e.g., []\T1/zi4/m/n/10 "pose_ke
 ypoints"[]\T1/ptm/m/n/10 , []\T1/zi4/m/n/10 "face_keypoints"[]\T1/ptm/m/n/10 , 
 []\T1/zi4/m/n/10 "hand_left_keypoints"[]\T1/ptm/m/n/10 ,
@@ -470,66 +470,66 @@ ypoints"[]\T1/ptm/m/n/10 , []\T1/zi4/m/n/10 "face_keypoints"[]\T1/ptm/m/n/10 ,
 
 [3]
 LaTeX Font Info:    Trying to load font information for TS1+zi4 on input line 1
-46.
+45.
  (/usr/share/texlive/texmf-dist/tex/latex/inconsolata/ts1zi4.fd
 File: ts1zi4.fd 2018/01/14 TS1/zi4 (Inconsolata)
 )
 LaTeX Font Info:    Font shape `TS1/zi4/m/n' will be
-(Font)              scaled to size 10.0pt on input line 146.
+(Font)              scaled to size 10.0pt on input line 145.
 
-Overfull \hbox (19.72977pt too wide) in paragraph at lines 147--147
+Overfull \hbox (19.72977pt too wide) in paragraph at lines 146--146
  [] \T1/zi4/m/n/10 $ id         : chr  "2006-01-14_0600_US_KTTV-FOX_Ten_OClock_
 News_273-275_back_then" ...[] 
  []
 
 
-Overfull \hbox (49.75021pt too wide) in paragraph at lines 150--150
+Overfull \hbox (49.75021pt too wide) in paragraph at lines 149--149
  [] \T1/zi4/m/n/10 $ type_points: chr  "pose_keypoints" "pose_keypoints" "pose_
 keypoints" "pose_keypoints" ...[] 
  []
 
 [4]
-Overfull \hbox (49.78088pt too wide) in paragraph at lines 201--201
- []\T1/zi4/m/n/10 2006-01-14_0600_US_KTTV-FOX_Ten_OClock_News_273-275_back_then
-_000000000000_keypoints.json[] 
+Overfull \hbox (24.78088pt too wide) in paragraph at lines 197--197
+ []\T1/zi4/m/n/10 2006-01-14_0600_US_KTTV-FOX_Ten_OClock_News_273-275_back_0000
+00000000_keypoints.json[] 
  []
 
 
-Overfull \hbox (78.9205pt too wide) in paragraph at lines 211--212
+Overfull \hbox (78.9205pt too wide) in paragraph at lines 207--208
 []\T1/ptm/m/n/10 Extracted by []\T1/zi4/m/n/10 extract_network_code[]\T1/ptm/m/
 n/10 , []\T1/zi4/m/n/10 extract_program_name[]\T1/ptm/m/n/10 ,
  []
 
-
-Overfull \hbox (10.09972pt too wide) in paragraph at lines 243--245
+[5]
+Overfull \hbox (10.09972pt too wide) in paragraph at lines 252--254
 []\T1/ptm/m/n/10 OpenPose GitHub Repos-i-tory: [][]$\T1/zi4/m/n/10 https : / / 
 github . com / CMU-[]Perceptual-[]Computing-[]Lab / openpose$[][] 
  []
 
-[5]
-Overfull \hbox (8.60739pt too wide) in paragraph at lines 249--251
-[]\T1/ptm/m/n/10 Alternatively, ex-plore the Open-Pose GitHub repos-i-tory for 
-im-ple-men-ta-tion de-tails: [][]$\T1/zi4/m/n/10 https : / / github .
+
+Overfull \hbox (17.79842pt too wide) in paragraph at lines 255--257
+\T1/ptm/m/it/10 tions on Pat-tern Anal-y-sis and Ma-chine In-tel-li-gence\T1/pt
+m/m/n/10 , 43(1), 172^^U186. [][]doi:10.1109/TPAMI.2019.2929257[][] 
  []
 
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 9.0pt on input line 254.
-[6] (/tmp/Rtmps6fopD/Rd2pdfb32618ce264f/Rd2.ind [7] [8
+(Font)              scaled to size 9.0pt on input line 263.
+[6] (/tmp/Rtmp3e3HyE/Rd2pdf65b8505e0751/Rd2.ind [7] [8
 
 
 ])
-(/tmp/Rtmps6fopD/Rd2pdfb32618ce264f/Rd2.aux)
+(/tmp/Rtmp3e3HyE/Rd2pdf65b8505e0751/Rd2.aux)
 Package rerunfilecheck Info: File `Rd2.out' has not changed.
 (rerunfilecheck)             Checksum: 54BD7AEBD5E62173CD2D76B0490F8B58;148.
  ) 
 Here is how much of TeX's memory you used:
- 10427 strings out of 476091
- 160315 string characters out of 5794081
+ 10428 strings out of 476091
+ 160326 string characters out of 5794081
  1862330 words of memory out of 5000000
  30585 multiletter control sequences out of 15000+600000
  549333 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 92i,5n,92p,587b,730s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 92i,6n,92p,587b,730s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/inconsolata/i4-ts1.enc}{/usr/s
 hare/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texlive/texmf-d
 ist/fonts/enc/dvips/inconsolata/i4-t1-0.enc}</usr/share/texlive/texmf-dist/font
@@ -538,10 +538,10 @@ fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8
 a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Rd2.pdf (8 pages, 95987 bytes).
+Output written on Rd2.pdf (8 pages, 96837 bytes).
 PDF statistics:
  129 PDF objects out of 1000 (max. 8388607)
  104 compressed objects within 2 object streams
- 32 named destinations out of 1000 (max. 500000)
+ 33 named destinations out of 1000 (max. 500000)
  17 words of extra memory for PDF output out of 10000 (max. 10000000)
 

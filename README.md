@@ -76,7 +76,7 @@ head(df)
   
   ## **About MULTIFLOW**
   
-  The **MULTIFLOW** project investigates the interplay between gesture, prosody, and language to uncover multimodal signatures in communication. Learn more about our research and goals [here](https://daedalus.um.es/?page_id=32).
+  The **MULTIFLOW** project investigates the interplay between gesture, prosody, and language to uncover multimodal signatures in communication. Learn more about our research and goals.
 
 ### Publications in Preparation
 
@@ -96,7 +96,7 @@ head(df)
   ## **See Also**
   
   - [dfMaker GitHub Repository](https://github.com/daedalusLAB/dfMaker)
-- [MULTIFLOW Project Page](https://daedalus.um.es/?page_id=32)
+
 
 --- 
   

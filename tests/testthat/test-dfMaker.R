@@ -6,7 +6,7 @@ library(multimolang) # Ensure the package name is correct
 # General test for dfMaker
 test_that("dfMaker processes a folder and returns a data frame", {
   # Use the package path
-  input_folder <- system.file("extdata", "ex_videos", "o1", package = "multimolang")
+  input_folder <- system.file("extdata", "eg", "o2", package = "multimolang")
 
   # Run dfMaker
   result <- dfMaker(input.folder = input_folder, no_save = TRUE)
@@ -32,7 +32,7 @@ test_that("dfMaker processes a folder and returns a data frame", {
 # Test for fast_scaling = TRUE (pose_keypoints only)
 test_that("Origin and scaling points are correctly transformed with fast_scaling = TRUE for pose_keypoints", {
   # Define the input folder with example data using system.file()
-  input_folder <- system.file("extdata", "ex_videos", "o1", package = "multimolang")
+  input_folder <- system.file("extdata", "eg", "o2", package = "multimolang")
 
   # Verify that the input folder exists
   expect_true(dir.exists(input_folder), "The input folder does not exist")
@@ -52,7 +52,7 @@ test_that("Origin and scaling points are correctly transformed with fast_scaling
 # Test for fast_scaling = FALSE (including pose_keypoints)
 test_that("Origin and scaling points are correctly transformed with fast_scaling = FALSE for all keypoints", {
   # Define the input folder with example data using system.file()
-  input_folder <- system.file("extdata", "ex_videos", "o1", package = "multimolang")
+  input_folder <- system.file("extdata", "eg", "o2", package = "multimolang")
 
   # Verify that the input folder exists
   expect_true(dir.exists(input_folder), "The input folder does not exist")
@@ -75,7 +75,7 @@ test_that("Origin and scaling points are correctly transformed with fast_scaling
 # Test with a custom configuration file where all values are set to true
 test_that("dfMaker processes a folder using a custom configuration file with all true values", {
   # Use the package path for the input data
-  input_folder <- system.file("extdata", "ex_videos", "o2", package = "multimolang")
+  input_folder <- system.file("extdata", "eg", "o2", package = "multimolang")
   expect_true(dir.exists(input_folder), "The input folder does not exist")
 
   # Path to the configuration file (config_all_true.json)
