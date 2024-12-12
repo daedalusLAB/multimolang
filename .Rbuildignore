@@ -2,7 +2,7 @@
 ^\\.gitignore$
 ^\\.Rproj.user$
 ^vignettes/.*\\.log$
-^README\\.md$
+^LICENSE$
 ^\\.DS_Store$
 ^multimolang\\.Rproj$
 ^doc$
