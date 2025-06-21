@@ -1,5 +1,7 @@
 # **multimolang**: Multimodal Language Analysis Tools
 
+[![](https://cranlogs.r-pkg.org/badges/multimolang)](https://cran.r-project.org/package=multimolang)
+
 **multimolang** is a package designed to support multimodal data analysis for linguistic research. It serves as the main repository for the **MULTIFLOW** project and provides tools to process, analyze, and derive insights from multimodal datasets, starting with gesture trajectories extracted from video data.
 
 The first implemented tool, `dfMaker`, processes raw OpenPose data into structured dataframes, optimized for large-scale, multimodal data science workflows. Future versions of **multimolang** will include additional tools for prosody analysis and multimodal language integration.
