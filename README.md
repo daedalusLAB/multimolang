@@ -7,6 +7,19 @@
 The first implemented tool, `dfMaker`, processes raw OpenPose data into structured dataframes, optimized for large-scale, multimodal data science workflows. Future versions of **multimolang** will include additional tools for prosody analysis and multimodal language integration.
 
 ---
+## Citation
+
+If you use `multimolang` or any of its core functions (such as `dfMaker`) in your research, please cite:
+
+> Herreño Jiménez, B. (2024). *multimolang: Multimodal Language Analysis* [R package version 0.1.1]. The R Foundation. https://doi.org/10.32614/cran.package.multimolang
+
+You can also retrieve the BibTeX entry by running in R:
+
+```r
+citation("multimolang")
+``
+
+---
 
 ## **Installation**
 
