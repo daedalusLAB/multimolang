@@ -17,7 +17,7 @@ You can also retrieve the BibTeX entry by running in R:
 
 ```r
 citation("multimolang")
-``
+```
 
 ---
 
